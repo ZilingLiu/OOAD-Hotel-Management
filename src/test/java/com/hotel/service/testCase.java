@@ -12,6 +12,6 @@ public class testCase {
 
     @Test
     void testHotel(){
-        System.out.println(hotelService.list());
+        System.out.println(hotelService.getById(2));
     }
 }

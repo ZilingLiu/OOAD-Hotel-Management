@@ -9,4 +9,10 @@ public class Consumer {
     private String email;
     private Integer balance;
 
+    public Consumer(String consumerName, String password, String email) {
+        this.consumerName = consumerName;
+        this.password = password;
+        this.email = email;
+        this.balance = 0;
+    }
 }

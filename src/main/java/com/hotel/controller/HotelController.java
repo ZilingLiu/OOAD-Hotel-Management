@@ -30,8 +30,9 @@ public class HotelController {
 
 
 
-    @GetMapping("{id}")
-    public R getById(Integer id){
+    @GetMapping("selectHotel/{id}")
+    public R getById(@PathVariable int id){
+
 
         return new R(true,hotelService.getById(id));
     }
