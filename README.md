@@ -5,7 +5,7 @@
 
 ## 代码解释
 1. 后端代码config下是分页查询的配置类
-2. controller 下是表现层，用@RequestMapping与前端交互。util下的R类是后端与前端的数据格式约定，目前含有两个变量的json格式，flag值为True或False代表后端是否正确做出响应，data值为后端向前端提供的数据，当前端无需返回数据时，data为null。比如登录成功则
+2. controller 下是表现层，用@RequestMapping与前端交互。util下的R类是后端与前端的数据格式约定，目前含有两个变量的json格式，flag值为True或False代表后端是否正确做出响应，data值为后端向前端提供的数据，当前端无需返回数据时，data为null。比如登录成功则返回
 
 {
     "flag": true,
