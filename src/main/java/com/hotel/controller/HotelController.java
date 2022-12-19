@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/hotels")
 public class HotelController {
     @Autowired
@@ -39,7 +40,9 @@ public class HotelController {
 
     @GetMapping
     public R getAll(){
+
         return new R(true,roomService.list());
+
     }
     @PostMapping
     public R save(@RequestBody Hotel hotel){

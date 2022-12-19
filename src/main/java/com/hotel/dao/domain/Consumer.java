@@ -8,6 +8,7 @@ public class Consumer {
     private String password;
     private String email;
     private Integer balance;
+    private Integer userPoints;
 
     public Consumer(String consumerName, String password, String email) {
         this.consumerName = consumerName;

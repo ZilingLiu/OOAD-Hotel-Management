@@ -15,6 +15,7 @@ public class HotelServiceImpl extends ServiceImpl<HotelDao, Hotel> implements Ho
     @Autowired
     private HotelDao hotelDao;
 
+
     @Override
     public Boolean modify(Hotel hotel) {
         return hotelDao.updateById(hotel) > 0;
@@ -24,6 +25,7 @@ public class HotelServiceImpl extends ServiceImpl<HotelDao, Hotel> implements Ho
     public IPage<Hotel> getPage( int currentPage, int PageSize) {
         IPage page = new Page(currentPage,PageSize);
         hotelDao.selectPage(page, null);
+
         return page;
     }
 //    @Override
